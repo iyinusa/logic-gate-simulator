@@ -1,0 +1,125 @@
+/* resets */
+*,
+*:before,
+*:after {
+    box-sizing: border-box;
+}
+.clearfix:after {
+    content: "";
+    display: table;
+    clear: both;
+}
+
+/* layout */
+@media all and ( min-width: 600px ) {
+
+    .primary {
+        float: left;
+        width: 40%;
+        padding-right:50px;
+    }
+    .secondary {
+        width: 40%;
+    }
+
+    .secondary img{
+        width: 400px;
+    }
+}
+
+
+
+
+
+body{
+    background: white;
+}
+
+.main{
+    max-width: none;
+}
+.article a,
+.article h1,
+.article h2,
+.article h3,
+.drawer .toc a.current,
+.drawer .toc a:focus,
+.drawer .toc a:hover{
+    color: #ac193d;
+}
+
+.article h1 {
+    display: none;
+    font-size: 30px;
+    font-weight: 600;
+    border-bottom:0;
+    padding:0;
+}
+
+.article h2{
+    font-size: 20px;
+    font-weight: 600;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin-bottom:30px;
+}
+
+.article h3{
+    font-size: 18px;
+    font-weight: 200;
+    border-bottom: 1px solid rgba(0,0,0,0.05);
+    margin-bottom:20px;
+}
+
+.article table th,
+.header,
+.footer{
+    background: #ac193d;
+}
+
+.article ol,
+.article p,
+.article ul{
+    margin-top:0px;
+}
+
+.branding {
+    color: #FF9A03;
+    font-family: 'Courier New', 'Courier', monospace;
+    font-size: 20px;
+    text-transform: uppercase;
+    font-weight: 100;
+}
+.backdrop{
+    display:none !important;
+}
+
+.article{
+    font-size: 18px;
+}
+
+.drawer .anchor a {
+    border-left: 2px solid #ac193d;
+}
+
+
+.copyright,
+.banner,
+.button-search{
+    display:none !important;
+}
+
+@media only screen and (min-width: 960px) {
+    .header {
+        left: 260px;
+    }
+}
+
+.drawer{
+    margin-top:0px;
+    padding-top:0px;
+    border-right:1px solid rgba(0,0,0,0.2);
+}
+
+.naked table th{
+    background-color:transparent !important;
+}

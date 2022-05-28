@@ -1,0 +1,144 @@
+{
+    "docs": [
+        {
+            "location": "/", 
+            "text": "What is brainbox\n\n\nThe starting point for \nInternet of Things\n applications are the things themselves.\n\nbrainbox\n is an authoring system for designers, developers, makers, researchers\nand students who want to design and build tangible Internet of Things projects. \nbrainbox\n\nallows anyone to graphically create new unlimited interactions between this physical and virtual objects within a\nsimple web-browser application without knowing coding or hacking.\n\n\n\n\nBrainbox can accept input data from devices connected to the PC, such as a switch, sensor, joystick or even an\nRF24 wireles device.\n\n\nWhat it is NOT\n\n\nbrainbox\n is not a (yet another) new home automation server. It's purpose\nis to cover key components of networking, IoT and digital circuits to ensure that you understand how to connect\ndevice to the Internet with fun.\n\n\n\n\n\nBrowser-based editing\n\n\n\n\n\n    \n\n\n\n\n\n \nbrainbox\n provides a browser-based flow editor that makes it easy to\n wire  things together using the wide range of nodes in the palette. The created files, named \nbrains\n, can be then\n deployed to the runtime in  a single-click. New JavaScript based nodes, named \nblocs\n can be created within the web based\n designer.\n\n\n\n\n\n\n\n\n\nServer\n\n\n\n\n\n The server part of \nbrainbox\n handles communication with actual hardware and is built\n on Node.js. It is designed to run on Linux based embedded devices, PCs, on cloud servers. Once a project has been\n authored, the server continues to run the project even when the browser has disconnected.\n\n\n\n\n    \n\n\n\n\n\n\n\n\n\n\nHook up Sensors\n\n\nA good way to get started with an Arduino is to hook up some sensors and read them with brainbox.\n\n\nUSB\n\n\n\n\n\n  \n\n\n\n\n\nDo you want to add wireless capability to your project? Using the NRF24L01+ module is a very easy and\nreliable way to do so. This transceiver module works at the 2.4GHz band and it is extremely easy to use with\nany Arduino board and \nbrainbox\n. Download the ready to use Arduino sketches and\nconnect the wires and you are ready to use them within the browser base editor.\nYou can find detailed\ninformation how to setup the RF24 or the arduino in the platform section of this documentation\n\n\n\n\n\n\nWireless\n\n\n\n\n\nDo you want to add wireless capability to your project? Using the NRF24L01+ module is a very easy and\nreliable way to do so. This transceiver module works at the 2.4GHz band and it is extremely easy to use with\nany Arduino board and \nbrainbox\n. Download the ready to use Arduino sketches and\nconnect the wires and you are ready to use them within the browser base editor.\nYou can find detailed\ninformation how to setup the RF24 or the arduino in the platform section of this documentation", 
+            "title": "About"
+        }, 
+        {
+            "location": "/#what-is-brainbox", 
+            "text": "The starting point for  Internet of Things  applications are the things themselves. brainbox  is an authoring system for designers, developers, makers, researchers\nand students who want to design and build tangible Internet of Things projects.  brainbox \nallows anyone to graphically create new unlimited interactions between this physical and virtual objects within a\nsimple web-browser application without knowing coding or hacking.  \nBrainbox can accept input data from devices connected to the PC, such as a switch, sensor, joystick or even an\nRF24 wireles device.", 
+            "title": "What is brainbox"
+        }, 
+        {
+            "location": "/#what-it-is-not", 
+            "text": "brainbox  is not a (yet another) new home automation server. It's purpose\nis to cover key components of networking, IoT and digital circuits to ensure that you understand how to connect\ndevice to the Internet with fun.", 
+            "title": "What it is NOT"
+        }, 
+        {
+            "location": "/#browser-based-editing", 
+            "text": "brainbox  provides a browser-based flow editor that makes it easy to\n wire  things together using the wide range of nodes in the palette. The created files, named  brains , can be then\n deployed to the runtime in  a single-click. New JavaScript based nodes, named  blocs  can be created within the web based\n designer.", 
+            "title": "Browser-based editing"
+        }, 
+        {
+            "location": "/#server", 
+            "text": "The server part of  brainbox  handles communication with actual hardware and is built\n on Node.js. It is designed to run on Linux based embedded devices, PCs, on cloud servers. Once a project has been\n authored, the server continues to run the project even when the browser has disconnected.", 
+            "title": "Server"
+        }, 
+        {
+            "location": "/#hook-up-sensors", 
+            "text": "A good way to get started with an Arduino is to hook up some sensors and read them with brainbox.", 
+            "title": "Hook up Sensors"
+        }, 
+        {
+            "location": "/#usb", 
+            "text": "Do you want to add wireless capability to your project? Using the NRF24L01+ module is a very easy and\nreliable way to do so. This transceiver module works at the 2.4GHz band and it is extremely easy to use with\nany Arduino board and  brainbox . Download the ready to use Arduino sketches and\nconnect the wires and you are ready to use them within the browser base editor. You can find detailed\ninformation how to setup the RF24 or the arduino in the platform section of this documentation", 
+            "title": "USB"
+        }, 
+        {
+            "location": "/#wireless", 
+            "text": "Do you want to add wireless capability to your project? Using the NRF24L01+ module is a very easy and\nreliable way to do so. This transceiver module works at the 2.4GHz band and it is extremely easy to use with\nany Arduino board and  brainbox . Download the ready to use Arduino sketches and\nconnect the wires and you are ready to use them within the browser base editor. You can find detailed\ninformation how to setup the RF24 or the arduino in the platform section of this documentation", 
+            "title": "Wireless"
+        }, 
+        {
+            "location": "/startet/", 
+            "text": "Brainbox Basics\n\n\nYou can customize and manipulate functional \u201cbrains\u201d from any computer\u2019s browser, local or remote.\nEvery \nbrainbox\n file consists of nodes which are linked together to form the logical flow of your\napplication. The nodes typically fall under \ninput\n, \noperation\n or \noutput\n.\n\n\n\nBased on a friendly user interface, the user can interact with its logic blocks, flip switches, change the\ninput data, connect any device via \nwireless communication\n modules and watch the output data changes for sequential\nmodels. We are sure that this tool will be of great help to any student who has interest in this field, and enable\nhim to better understand the logic circuit design process.\n\n\nBelow is a very simple example of how these different nodes would interact with each other.\n\n\n\n\n\n\n\n\n\n\n\nEasy To Use\n\n\n\n\n\n  \n1. Place\n\n  \n\n  Select an element. Place it on the board.\n  \n\n  \n\n  \n2. Connect\n\n  \n\n  Use the Wire Tool to connect your elements.\n  \n\n  \n\n  \n3. Test\n\n  \n\n  Click RUN to start the simulation.\n\n\n\n\n   \n\n\n\n\n\n\nPlace nodes\n\n\nbrainbox\n lets you drag and drop components or nodes onto the editing surface and\nmanipulate them easily with your mouse.\n\n\n\nPlacing nodes\n\n\nTo add a component to the document, drag it from the left palette on the left side of the window to the\nediting surface on the right. Drop it at any location on the editing surface by releasing the left mouse button.\n\n\n\n\n\n\n\n\n\n\n\n\nSelect single component\n\n\nTo select a \nsingle component\n in the document, click it with your mouse. It will be highlighted blue to indicate\nthat it has been selected.\n\n\n\n\n\n\n\n\n\n\n\n\nSelect multiple components\n\n\nDrag and drop is not restricted only to single element. To select a \nmultiple component\n in the document, click\nanywhere in the document and drag a bounding box covering all elements to select.\n\n\n\n\n\n\n\n\n\n\n\n\nGrouping components\n\n\nYou can group multiple elements if you press the \nshift key\n during the multiple selection operation. The created \ngroup\n\nist more a raft than a closed group.\n\n\n\n\n\n\n\n\n\n\n\n\nDelete a node\n\n\nTo delete a node from the document, select it, and then click the Delete button in the upper tool bar. Alternatively,\npress either Delete/Entf on your keyboard to delete the selected component. You may also right-click the editing surface\nand choose \nDelete\n from the context menu.\n\n\n\n\nConnect nodes\n\n\nSignal is passed around the circuit by connecting nodes with \nwires\n.\n\n\nCreate a Connection\n\n\nTo create a connection click a component's output pin (a circular connector, usually on the right side), and drag a\nwire to an unconnected input pin. Compatible pins will be highlighted. Input pins may only be connected to a\nsingle output pin. An output pin may be connected to many input pins.\n\n\n\n\n\n\n\n\n\n\n\n\nRun the Simulation\n\n\nBrainBox\n starts simulating when you press the green arrow at the top right corner. The signal will instantly\npropagate among the connected components, and if your circuit contains one or more Clocks, they will start\noscillating.\n\n\n\n\n...open an example\n\n\ngo to the editor and open your very first example and start the simulation. \nopen", 
+            "title": "Getting Startet"
+        }, 
+        {
+            "location": "/startet/#brainbox-basics", 
+            "text": "You can customize and manipulate functional \u201cbrains\u201d from any computer\u2019s browser, local or remote.\nEvery  brainbox  file consists of nodes which are linked together to form the logical flow of your\napplication. The nodes typically fall under  input ,  operation  or  output .  \nBased on a friendly user interface, the user can interact with its logic blocks, flip switches, change the\ninput data, connect any device via  wireless communication  modules and watch the output data changes for sequential\nmodels. We are sure that this tool will be of great help to any student who has interest in this field, and enable\nhim to better understand the logic circuit design process.  Below is a very simple example of how these different nodes would interact with each other.", 
+            "title": "Brainbox Basics"
+        }, 
+        {
+            "location": "/startet/#easy-to-use", 
+            "text": "1. Place \n   \n  Select an element. Place it on the board.\n   \n   \n   2. Connect \n   \n  Use the Wire Tool to connect your elements.\n   \n   \n   3. Test \n   \n  Click RUN to start the simulation.", 
+            "title": "Easy To Use"
+        }, 
+        {
+            "location": "/startet/#place-nodes", 
+            "text": "brainbox  lets you drag and drop components or nodes onto the editing surface and\nmanipulate them easily with your mouse.", 
+            "title": "Place nodes"
+        }, 
+        {
+            "location": "/startet/#placing-nodes", 
+            "text": "To add a component to the document, drag it from the left palette on the left side of the window to the\nediting surface on the right. Drop it at any location on the editing surface by releasing the left mouse button.", 
+            "title": "Placing nodes"
+        }, 
+        {
+            "location": "/startet/#select-single-component", 
+            "text": "To select a  single component  in the document, click it with your mouse. It will be highlighted blue to indicate\nthat it has been selected.", 
+            "title": "Select single component"
+        }, 
+        {
+            "location": "/startet/#select-multiple-components", 
+            "text": "Drag and drop is not restricted only to single element. To select a  multiple component  in the document, click\nanywhere in the document and drag a bounding box covering all elements to select.", 
+            "title": "Select multiple components"
+        }, 
+        {
+            "location": "/startet/#grouping-components", 
+            "text": "You can group multiple elements if you press the  shift key  during the multiple selection operation. The created  group \nist more a raft than a closed group.", 
+            "title": "Grouping components"
+        }, 
+        {
+            "location": "/startet/#delete-a-node", 
+            "text": "To delete a node from the document, select it, and then click the Delete button in the upper tool bar. Alternatively,\npress either Delete/Entf on your keyboard to delete the selected component. You may also right-click the editing surface\nand choose  Delete  from the context menu.", 
+            "title": "Delete a node"
+        }, 
+        {
+            "location": "/startet/#connect-nodes", 
+            "text": "Signal is passed around the circuit by connecting nodes with  wires .", 
+            "title": "Connect nodes"
+        }, 
+        {
+            "location": "/startet/#create-a-connection", 
+            "text": "To create a connection click a component's output pin (a circular connector, usually on the right side), and drag a\nwire to an unconnected input pin. Compatible pins will be highlighted. Input pins may only be connected to a\nsingle output pin. An output pin may be connected to many input pins.", 
+            "title": "Create a Connection"
+        }, 
+        {
+            "location": "/startet/#run-the-simulation", 
+            "text": "BrainBox  starts simulating when you press the green arrow at the top right corner. The signal will instantly\npropagate among the connected components, and if your circuit contains one or more Clocks, they will start\noscillating.", 
+            "title": "Run the Simulation"
+        }, 
+        {
+            "location": "/startet/#open-an-example", 
+            "text": "go to the editor and open your very first example and start the simulation.  open", 
+            "title": "...open an example"
+        }, 
+        {
+            "location": "/platforms/", 
+            "text": "There are a number of different ways to use or install the brainbox software. \"brainbox\" is an\nbrowser base application which \ncan\n be served from a node.js server.\n\n\n\n\nNode.js is a platform built on Chrome's JavaScript runtime for easily building fast, scalable network\napplications. The Node.js applications are written in JavaScript, and can be run within the\nNode.js engine. You need the Node.js environment if you want have access to any hardware GPIO\nor connect any wireless device...\nwelcome to awesome the world of IoT.\n\n\nFeature Matrix\n\n\n\n\n\n\n\n\nFeature\n\n\n Web\n\n\nDesktop\n\n\nRaspberry Pi\n\n\nESP8266\n\n\n\n\n\n\n\n\n\n\nAuto Update\n\n\nX\n\n\n-\n\n\n-\n\n\n-\n\n\n\n\n\n\nHTML5 UI\n\n\nX\n\n\nX\n\n\nX\n\n\nX\n\n\n\n\n\n\nRunning simulation\n\n\nX\n\n\nX\n\n\nX\n\n\nX\n\n\n\n\n\n\nLoad / Save of files\n\n\nX\n\n\nX\n\n\nX\n\n\n-\n\n\n\n\n\n\nIn App Docu\n\n\nX\n\n\nX\n\n\nX\n\n\n-\n\n\n\n\n\n\nAccess to GPIO Pins\n\n\n-\n\n\nX\n\n\nX\n\n\nX\n\n\n\n\n\n\nArduino Slaves\n\n\n-\n\n\nX\n\n\nX\n\n\n-\n\n\n\n\n\n\nRF24 Slaves\n\n\n-\n\n\nX\n\n\nX\n\n\n-\n\n\n\n\n\n\n\n\nWeb\n\n\nThis, zero-install, Web and Cloud-based version can be used to go the very first steps. t's very helpful for\nexperimentation and visualization. Best of all, thanks to the power of HTML5, no plug-ins are required!\n\n\n\n\n\n \nExplore:\n \nBrainbox online\n\n\nDesktop\n\n\nRaspberry Pi\n\n\nHow to setup Node.js on a Raspberry Pi and run brainbox on it\n\n\n\n  \n\n\n\n\n\n1.) Setting up your Raspberry Pi\n\n\nRunning a basic setup of Raspbian on a Raspberry Pi is very easy and\nclearly explained in their \nGetting Started Guide\n\n\nDownload NOOBS, extract it on your SD, plug it in and turn\non the Raspberry Pi. When prompted, choose to install Raspbian and let it run.\n\n\nAduino", 
+            "title": "Platform"
+        }, 
+        {
+            "location": "/platforms/#feature-matrix", 
+            "text": "Feature   Web  Desktop  Raspberry Pi  ESP8266      Auto Update  X  -  -  -    HTML5 UI  X  X  X  X    Running simulation  X  X  X  X    Load / Save of files  X  X  X  -    In App Docu  X  X  X  -    Access to GPIO Pins  -  X  X  X    Arduino Slaves  -  X  X  -    RF24 Slaves  -  X  X  -", 
+            "title": "Feature Matrix"
+        }, 
+        {
+            "location": "/platforms/#web", 
+            "text": "This, zero-install, Web and Cloud-based version can be used to go the very first steps. t's very helpful for\nexperimentation and visualization. Best of all, thanks to the power of HTML5, no plug-ins are required!     Explore:   Brainbox online", 
+            "title": "Web"
+        }, 
+        {
+            "location": "/platforms/#desktop", 
+            "text": "", 
+            "title": "Desktop"
+        }, 
+        {
+            "location": "/platforms/#raspberry-pi", 
+            "text": "How to setup Node.js on a Raspberry Pi and run brainbox on it", 
+            "title": "Raspberry Pi"
+        }, 
+        {
+            "location": "/platforms/#1-setting-up-your-raspberry-pi", 
+            "text": "Running a basic setup of Raspbian on a Raspberry Pi is very easy and\nclearly explained in their  Getting Started Guide  Download NOOBS, extract it on your SD, plug it in and turn\non the Raspberry Pi. When prompted, choose to install Raspbian and let it run.", 
+            "title": "1.) Setting up your Raspberry Pi"
+        }, 
+        {
+            "location": "/platforms/#aduino", 
+            "text": "", 
+            "title": "Aduino"
+        }
+    ]
+}

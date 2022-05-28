@@ -1,0 +1,709 @@
+<!DOCTYPE html>
+<!--[if lt IE 7 ]><html class="no-js ie6"><![endif]-->
+<!--[if IE 7 ]><html class="no-js ie7"><![endif]-->
+<!--[if IE 8 ]><html class="no-js ie8"><![endif]-->
+<!--[if IE 9 ]><html class="no-js ie9"><![endif]-->
+<!--[if (gt IE 9)|!(IE)]><!--> <html class="no-js"> <!--<![endif]-->
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width,user-scalable=no,initial-scale=1,maximum-scale=1">
+    
+      
+        <title>Grundgatter - Grundlagen der Digitaltechnik</title>
+      
+      
+      
+      
+    
+    <meta property="og:url" content="None">
+    <meta property="og:title" content="Grundlagen der Digitaltechnik">
+    <meta property="og:image" content="None/../../">
+    <meta name="apple-mobile-web-app-title" content="Grundlagen der Digitaltechnik">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    
+    
+    <link rel="shortcut icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <link rel="icon" type="image/x-icon" href="../../assets/images/favicon-e565ddfa3b.ico">
+    <style>
+      @font-face {
+      	font-family: 'Icon';
+      	src: url('../../assets/fonts/icon.eot?52m981');
+      	src: url('../../assets/fonts/icon.eot?#iefix52m981')
+               format('embedded-opentype'),
+      		   url('../../assets/fonts/icon.woff?52m981')
+               format('woff'),
+      		   url('../../assets/fonts/icon.ttf?52m981')
+               format('truetype'),
+      		   url('../../assets/fonts/icon.svg?52m981#icon')
+               format('svg');
+      	font-weight: normal;
+      	font-style: normal;
+      }
+    </style>
+    <link rel="stylesheet" href="../../assets/stylesheets/application-a422ff04cc.css">
+    
+    
+      
+      
+      
+      <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu:400,700|Ubuntu+Mono">
+      <style>
+        body, input {
+          font-family: 'Ubuntu', Helvetica, Arial, sans-serif;
+        }
+        pre, code {
+          font-family: 'Ubuntu Mono', 'Courier New', 'Courier', monospace;
+        }
+      </style>
+    
+    
+      <link rel="stylesheet" href="../../extra.css">
+    
+    <script src="../../assets/javascripts/modernizr-4ab42b99fd.js"></script>
+    
+  </head>
+  
+  
+  
+  <body class=" ">
+    
+    <div class="backdrop">
+      <div class="backdrop-paper"></div>
+    </div>
+    <input class="toggle" type="checkbox" id="toggle-drawer">
+    <input class="toggle" type="checkbox" id="toggle-search">
+    <label class="toggle-button overlay" for="toggle-drawer"></label>
+    <header class="header">
+      <nav aria-label="Header">
+  <div class="bar default">
+    <div class="button button-menu" role="button" aria-label="Menu">
+      <label class="toggle-button icon icon-menu" for="toggle-drawer">
+        <span></span>
+      </label>
+    </div>
+    <div class="stretch">
+      <div class="title">
+        
+          <span class="path">
+            
+          </span>
+        
+        Grundgatter
+      </div>
+    </div>
+    
+    
+    <div class="button button-search" role="button" aria-label="Search">
+      <label class="toggle-button icon icon-search" title="Search" for="toggle-search"></label>
+    </div>
+  </div>
+  <div class="bar search">
+    <div class="button button-close" role="button" aria-label="Close">
+      <label class="toggle-button icon icon-back" for="toggle-search"></label>
+    </div>
+    <div class="stretch">
+      <div class="field">
+        <input class="query" type="text" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck>
+      </div>
+    </div>
+    <div class="button button-reset" role="button" aria-label="Search">
+      <button class="toggle-button icon icon-close" id="reset-search"></button>
+    </div>
+  </div>
+</nav>
+    </header>
+    <main class="main">
+      
+      <div class="drawer">
+        <nav aria-label="Navigation">
+  
+  <a href="/" class="project">
+    <div class="banner">
+      
+      <div class="name">
+        <strong>
+          Grundlagen der Digitaltechnik
+          <span class="version">
+            
+          </span>
+        </strong>
+        
+      </div>
+    </div>
+  </a>
+  <div class="scrollable">
+    <div class="wrapper">
+      
+      <div class="toc">
+        <ul>
+          
+            
+  <li>
+    <a class="" title="Grundlagen" href="../..">
+      Grundlagen
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="current" title="Grundgatter" href="./">
+      Grundgatter
+    </a>
+    
+      
+        
+      
+      
+        <ul>
+          
+            <li class="anchor">
+              <a title="AND-Gatter" href="#and-gatter">
+                AND-Gatter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="OR-Gatter" href="#or-gatter">
+                OR-Gatter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Inverter" href="#inverter">
+                Inverter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="NAND-Gatter" href="#nand-gatter">
+                NAND-Gatter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="NOR-Gatter" href="#nor-gatter">
+                NOR-Gatter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="EX-OR-Gatter (Exklusiv-ODER)" href="#ex-or-gatter-exklusiv-oder">
+                EX-OR-Gatter (Exklusiv-ODER)
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="EX-NOR-Gatter" href="#ex-nor-gatter">
+                EX-NOR-Gatter
+              </a>
+            </li>
+          
+            <li class="anchor">
+              <a title="Schaltung" href="#schaltung">
+                Schaltung
+              </a>
+            </li>
+          
+        </ul>
+      
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Gatter mit mehrer Eingängen" href="../../part20/README/">
+      Gatter mit mehrer Eingängen
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Taktgeber" href="../../part30/README/">
+      Taktgeber
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="FlipFlops" href="../../part40/README/">
+      FlipFlops
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="KV-Tafel" href="../../part50/README/">
+      KV-Tafel
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Frequenzteiler" href="../../part60/README/">
+      Frequenzteiler
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Zähler und Teiler" href="../../part70/README/">
+      Zähler und Teiler
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Schieberegister" href="../../part80/README/">
+      Schieberegister
+    </a>
+    
+  </li>
+
+          
+            
+  <li>
+    <a class="" title="Volladdierer" href="../../part90/README/">
+      Volladdierer
+    </a>
+    
+  </li>
+
+          
+        </ul>
+        
+      </div>
+    </div>
+  </div>
+</nav>
+      </div>
+      <article class="article">
+        <div class="wrapper">
+          
+          <h1 id="einfuhrung">Einführung</h1>
+<p>Logische Verknüpfungsschaltungen sind das Grundgerüst der digitalen 
+Technik. Mit Hilfe der 5 hier aufgeführten Verknüpfungsschaltungen,
+die auch Gatter genannt werden, lassen sich nun alle anderen 
+Verknüpfungsschaltungen realisieren.</p>
+<p>Die Wahrheitstabelle, oder auch Logik-Tafel, die bei jeder 
+Verknüpfungsschaltung mit aufgeführt wird, gibt an, welches Signal am 
+Ausgang anliegt, nachdem die Eingänge in einer bestimmten Weise 
+angeschlossen wurden. Dabei werden alle möglichen 
+Anschlusskombinationen durchgespielt.</p>
+<h2 id="and-gatter">AND-Gatter</h2>
+<p>Die Boolesche Funktionsgleichung (mathematische Gleichung) für das
+AND-Gatter lautet:</p>
+<pre><code>     A = E1 ∧ E2        (sprich: “E1 und E2“)
+</code></pre>
+
+<p><strong>Das bedeutet, dass  nur dann den Wert 1 hat</strong>, wenn die Eingänge
+<code>E1</code> und <code>E2</code> den Wert <code>1</code> haben.</p>
+<p><strong>In allen anderen Fällen</strong> hat der Ausgang <code>A</code> den Wert <code>0</code>.  Anhand
+der Logik-Tafel ist dies leicht zu erkennen. In der Zeile, in der <code>A</code>
+den Wert 1 hat, haben die beiden Eingänge ebenfalls den Wert 1.</p>
+<h3 id="logiktabelle">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol">Symbol</h3>
+<p><img alt="UND Gatter" src="../img01.png" /></p>
+<p>Hier ist die einfachste <code>UND-Verknüpfung</code> gewählt worden, nämlich die
+mit 2 Eingängen. Tatsächlich gibt es jedoch auch AND-Gatter mit mehr
+als zwei Eingängen. Die mathematische Logik bleibt dabei aber
+gleich:</p>
+<pre><code>Nur wenn alle Eingänge den Wert 1 haben, hat der Ausgang
+ebenfalls den Wert 1.
+</code></pre>
+<p>Die UND-Verknüpfung wird auch als <strong>Konjunktion</strong> bezeichnet, was so
+viel heißt wie <strong>Bindung</strong>.</p>
+<h2 id="or-gatter">OR-Gatter</h2>
+<p>Hier heißt die mathematischer Gleichung:</p>
+<pre><code>     A = E1 ∨ E2        (sprich: “E1 oder E2“)
+
+</code></pre>
+
+<p>Dabei hat A dann den Wert 1, wenn <code>E1</code> <strong>oder</strong> <code>E2</code> <strong>oder</strong> <code>beide</code> (!) Eingänge den Wert 1 haben.</p>
+<p>Dieses Verhalten
+unterscheidet sich von dem normalen Sprachgebrauch
+des Wortes <em>oder</em>. Hier bedeutet es: A hat nur dann
+den Wert 0, wenn beide Eingänge den Wert 0 haben.
+Sonst hat der Ausgang den Wert 1.</p>
+<h3 id="logiktabelle_1">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center">0</td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_1">Symbol</h3>
+<p><img alt="ODER Gatter" src="../img12.png" /></p>
+<p>Die ODER-Verknüpfung gibt es ebenfalls mit mehr als zwei Eingängen, wobei sich die mathematischer Logik wie beim AND-Gatter nicht ändert. Eine andere Bezeichnung für das OR-Gatter ist die <strong>Disjunktion</strong>, das heißt <strong>Trennung</strong>.</p>
+<h2 id="inverter">Inverter</h2>
+<p>Das Schaltsymbol des Inverters ist unten abgebildet. Dabei lässt sich die mathematische Logik durch folgende Gleichung darstellen:</p>
+<pre><code>     A = ¬E (sprich “E komplementär“ oder “E negiert“).
+</code></pre>
+
+<h3 id="logiktabelle_2">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_2">Symbol</h3>
+<p><img alt="ODER Gatter" src="../img13.png" /></p>
+<p>Ein anderer Begriff für den Inverter ist die <em>Negation</em>. Indem man nun das AND-Gatter und das OR-Gatter negiert, erhält man zwei weitere wichtige Verknüpfungsschaltungen.</p>
+<h2 id="nand-gatter">NAND-Gatter</h2>
+<p>Gebildet aus den englischen Worten <strong>not and</strong>, also <strong>nicht und</strong>. Daraus lässt sich bereits schließen, dass die Verknüpfung negiert sein muss. Die mathematische Gleichung bestätigt dies:</p>
+<pre><code>     A = ¬(E1 ∧ E2) (sprich: “E1 und E2 negiert“)
+
+
+</code></pre>
+
+<p>Der Ausgang <code>A</code> hat immer den Wert 1, außer wenn beide Eingänge den Wert 1 haben. Anhand der Logik-Tafel lässt sich auch erkennen, dass die NAND-Funktion an ihrem Ausgang genau das entgegengesetzte Signal hat wie das AND-Gatter.</p>
+<h3 id="logiktabelle_3">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_3">Symbol</h3>
+<p><img alt="ODER Gatter" src="../img14.png" /></p>
+<h2 id="nor-gatter">NOR-Gatter</h2>
+<p>Gebildet aus den englischen Wörtern <strong>not or</strong>, was übersetzt <strong>nicht oder</strong> heißt. Es handelt sich also wiederum um eine Negation, nämlich die der OR-Verknüpfung. Die mathematische Gleichung lautet:</p>
+<pre><code>     A = ¬(E1 ∨ E2) (sprich: “E1 oder E2 negiert“)
+
+</code></pre>
+
+<p>Bei dieser Verknüpfungsschaltung hat der Ausgang <code>A</code> den Wert 1, wenn beide Eingänge den Wert 0 haben. In allen anderen Fällen hat der Ausgang den Wert 0.</p>
+<h3 id="logiktabelle_4">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_4">Symbol</h3>
+<p><img alt="NOR Gatter" src="../img15_1.png" /></p>
+<p>Da diese beiden letzten Gatter sehr häufig vorkommen, haben sie ein eigenes Schaltsymbol. Außerdem sind sie für den Praktiker sehr interessant, da sie gegenüber den <em>UND-</em> bzw. <em>ODER-Gattern</em> meist erheblich billiger sind. Deshalb nimmt man häufig zwei <em>NAND-Gatter</em> um ein <em>UND-Gatter</em> billig aufzubauen, oder zwei NOR-Gatter für ein OR-Gatter. Die dafür notwendigen Schaltungen werden im Folgenden erklärt.</p>
+<p><img alt="NOR Schaltung" src="../img15_2.png" /></p>
+<p>Bei dieser Schaltung hat der Ausgang <code>A1</code> nur dann den Wert 0, wenn beide Eingänge, also <code>E1</code> und <code>E2</code> den Wert 1 haben. Der offene (nicht angeschlossene) Eingang <code>E4</code> hat generell den Wert 1. Um aber am Ausgang A2 den Wert 1 zu erreichen, muss deswegen <code>E3</code> und somit am Ausgang <code>A1</code> der Wert 0 anliegen. Dies wird, wie oben schon beschrieben, nur dadurch erreicht, dass man den Eingängen <code>E1</code> und <code>E2</code> den Wert 1 zuordnet.</p>
+<p>Mathematisch ausgedrückt bedeutet dies:</p>
+<pre><code>A1 = ¬(E1 ∧ E2)
+
+A2 = ¬A1 = ¬(¬(E1 ∧ E2))
+</code></pre>
+<p><code>¬(¬(E1 ∧ E2))</code> ist aber nichts anderes als <code>E1 ∧ E2</code>; somit gilt die Funktionsgleichung der normalen UND-Verknüpfung:</p>
+<pre><code>A2 = E1 ∧ E2
+</code></pre>
+<p>Dies beweist, dass die obige Schaltung einer normalen UND-Verknüpfung entspricht.</p>
+<p><img alt="NOR Schaltung aus OR" src="../img15_3.png" /></p>
+<p>Die Logik dieser Schaltung ist ähnlich der Vorherigen. Der Ausgang <code>A2</code> hat nur dann den Wert 0, wenn <code>E3</code> den Wert 1 hat. E4 ist durch den Masseanschluss sowieso immer auf 0. Der Wert 1 an <code>E3</code> und somit an <code>A1</code> wird aber nur erreicht, indem man <code>E1</code> und <code>E2</code> den Wert 0 zuordnet. In allen anderen Fällen hat <code>A1</code> den Wert 0 und damit <code>A2</code> den Wert 1. Dies wiederum entspricht genau der OR-Verknüpfung.</p>
+<p>Hier der mathematische Beweis:</p>
+<pre><code>A1 = ¬(E1 ∨ E2)
+
+A2 = ¬A1 = ¬(¬(E1 ∨ E2)) = E1 ∨ E2
+</code></pre>
+<p>Mit diesen nun beschriebenen <strong>5 Grundschaltungen</strong> (AND-, NAND-, OR-, NOR-Gatter und Inverter) lassen sich <strong>alle</strong> anderen logischen Verknüpfungsschaltungen realisieren.</p>
+<p>Man muss nur die gewünschten Elemente zusammenschalten. Den mathematischen Hintergrund für die Kombination der Gatter liefert die Boolesche Algebra. Die Grundfunktionen sind bei der Erklärung der Schaltungen mit angegeben.</p>
+<h2 id="ex-or-gatter-exklusiv-oder">EX-OR-Gatter (Exklusiv-ODER)</h2>
+<p>Eine Variation der Zusammenschaltung der 5 Grundgatter ist das <em>Exklusiv-ODER</em>. Im Gegensatz zur ODER-Verknüpfung tritt am Ausgang nicht der Wert 1 auf, wenn beide Eingänge den Wert 1 haben. Diese Funktion entspricht jetzt dem <em>oder</em> wie es im normalen Sprachgebrauch verwendet wird. Das heißt, dass am Ausgang der Wert 1 vorliegt, wenn <strong>entwedder <code>E1</code> oder <code>E2</code></strong> den Wert 1 haben. Sobald <code>E1</code> und <code>E2</code> den gleichen Wert haben, liegt am Ausgang A der Wert 0.</p>
+<h3 id="logiktabelle_5">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_5">Symbol</h3>
+<p><img alt="symbol" src="../img01.png" /></p>
+<p>Da diese Verknüpfungsschaltung sehr häufig vorkommt, hat auch sie ihr eigenes Schaltsymbol. Sie kann aber auch durch die Zusammenschaltung von 2 Invertern, 2 AND-Gattern und einem NOR-Gatter aufgebaut werden. Die mathematische Funktion lautet:</p>
+<pre><code>A = (¬E1 ∧ E2) ∨ (E1 ∧ ¬E2
+</code></pre>
+<p>Nun zum Schaltbild des Exklusiv-ODER. Ein Praktiker kann schon anhand der mathematischen Gleichung das Schaltbild zeichnen. Man muss dabei nur genau die Gleichung in die Schaltsymbole der logischen Verknüpfung umwandeln.</p>
+<p><img alt="schaltung" src="../img02.png" /></p>
+<p>Bei dieser Schaltung wollen wir nun einmal einen anderen Weg gehen, der sich vor allem bei komplexen und komplizierteren Schaltungen als sehr einfach herausstellt. Dabei wird an die beiden Eingänge <code>E1</code> und <code>E2</code> jede mögliche Eingangskombination gelegt und bis zum Ausgang <code>A</code> <em>durchgespielt</em>. Im vorliegenden Fall sind das genau 4 Kombinationen.</p>
+<ol>
+<li>
+<p>An E1 und E2 liegt jeweils der Wert 0. Das obere AND-Gatter hat also am Eingang den Wert 0 von E1 und den Wert 1 vom invertierten E2. Das ergibt einen Zwischenwert G1 = 0. Das untere AND-Gatter hat ebenfalls den Wert 0 (von E2) und den Wert 1 (invertiertes E1) und somit ebenfalls den Zwischenwert G2 = 0. Diese beiden Zwischenwerte liegen nun an einem OR-GATTER, das dadurch am Ausgang den Wert 0 hat. Damit ist die erste Zeile der Logik-Tafel schon festgelegt.</p>
+</li>
+<li>
+<p>Nun legt man an E1 den Wert 0 und an E2 den Wert 1. Da E2 invertiert an das obere AND-Gatter gelangt und E1 von vorneherein 0 ist, erscheint am oberen Zwischenausgang G1 der Wert 0. Beim unteren AND-Gatter sind dagegen beide Eingänge auf dem Wert 1, da E1 invertiert wird und E2 den Wert 1 hat. Das ergibt am Zwischenausgang G2 den Wert 1. Am OR-Gatter liegt also nun einmal der Wert 0 (G1) und einmal der Wert 1 (G2). Der Ausgang A hat somit den Wert 1.</p>
+</li>
+<li>
+<p>Wenn man nun an den Eingang E1 den Wert 1 und an E2 den Wert 0 legt, so läuft die Logik genau den gleichen Weg. Nur liegen dabei die Werte die vorher am oberen AND-Gatter lagen nun am unteren und umgekehrt. Am Ausgang erscheint deshalb wie unter 2. der Wert.</p>
+</li>
+<li>
+<p>Die letzte Kombinationsmöglichkeit ist nun die, dass beide Eingänge E1 und E2 den Wert 1 bekommen. Durch die Invertierung von E2 am oberen und E1 am unteren AND-Gatter haben die Zwischenausgänge G1 und G2 die gleichen Werte, nämlich 0. Eine Parallele dazu ist die erste Kombination. Am Ausgang A erscheint deshalb der Wert 0.</p>
+</li>
+</ol>
+<h2 id="ex-nor-gatter">EX-NOR-Gatter</h2>
+<p>Eine Variation des EX-OR-Gatters ist diese Schaltung. Dabei wird nur der Ausgang A der oberen Schaltung invertiert.</p>
+<h3 id="logiktabelle_6">Logiktabelle</h3>
+<table>
+<thead>
+<tr>
+<th align="center">E1</th>
+<th align="center">E2</th>
+<th align="center">A</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td align="center">0</td>
+<td align="center">0</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+<tr>
+<td align="center">0</td>
+<td align="center">1</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">0</td>
+<td align="center"><strong>0</strong></td>
+</tr>
+<tr>
+<td align="center">1</td>
+<td align="center">1</td>
+<td align="center"><strong>1</strong></td>
+</tr>
+</tbody>
+</table>
+<h3 id="symbol_6">Symbol</h3>
+<p><img alt="symbol" src="../img17_1.png" /></p>
+<h2 id="schaltung">Schaltung</h2>
+<p><img alt="schaltung" src="../img17_2.png" /></p>
+          <aside class="copyright" role="note">
+            
+            Documentation built with
+            <a href="http://www.mkdocs.org" target="_blank">MkDocs</a>
+            using the
+            <a href="http://squidfunk.github.io/mkdocs-material/" target="_blank">
+              Material
+            </a>
+            theme.
+          </aside>
+          
+            <footer class="footer">
+              
+  <nav class="pagination" aria-label="Footer">
+    <div class="previous">
+      
+        <a href="../.." title="Grundlagen">
+          <span class="direction">
+            Previous
+          </span>
+          <div class="page">
+            <div class="button button-previous" role="button" aria-label="Previous">
+              <i class="icon icon-back"></i>
+            </div>
+            <div class="stretch">
+              <div class="title">
+                Grundlagen
+              </div>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+    <div class="next">
+      
+        <a href="../../part20/README/" title="Gatter mit mehrer Eingängen">
+          <span class="direction">
+            Next
+          </span>
+          <div class="page">
+            <div class="stretch">
+              <div class="title">
+                Gatter mit mehrer Eingängen
+              </div>
+            </div>
+            <div class="button button-next" role="button" aria-label="Next">
+              <i class="icon icon-forward"></i>
+            </div>
+          </div>
+        </a>
+      
+    </div>
+  </nav>
+
+            </footer>
+          
+        </div>
+      </article>
+      <div class="results" role="status" aria-live="polite">
+        <div class="scrollable">
+          <div class="wrapper">
+            <div class="meta"></div>
+            <div class="list"></div>
+          </div>
+        </div>
+      </div>
+    </main>
+    <script>
+      var base_url = '../..';
+      var repo_id  = '';
+    </script>
+    <script src="../../assets/javascripts/application-997097ee0c.js"></script>
+    
+    
+  </body>
+</html>
